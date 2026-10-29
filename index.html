@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guideregion — Guide to the Sights of Your Region</title>
+  <meta name="description" content="Tourist web guide: natural and historical sights, route maps and expedition checklists.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#top">
+      <span class="logo__mark" aria-hidden="true"></span>
+      Guideregion
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle visually-hidden">
+    <label for="nav-toggle" class="burger" aria-label="Open or close the menu">
+      <span class="burger__line"></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="main-nav__list">
+        <li><a href="#top-places" aria-current="page">Top Places</a></li>
+        <li><a href="#route-planner">Routes</a></li>
+        <li><a href="#site-footer">Tips for Tourists</a></li>
+      </ul>
+      <form class="search" role="search" action="#" method="get">
+        <label class="visually-hidden" for="location-search">Search by location</label>
+        <input id="location-search" name="q" type="search" placeholder="Search by location">
+      </form>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__bg" src="images/hero.svg" alt="">
+      <h1 id="hero-title">Discover the Amazing Places of Your Region</h1>
+      <p>Hiking trails, historic sites and route maps in one guide.</p>
+      <a class="btn btn--accent" href="#route-planner">Choose a Tour <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="places" id="top-places" aria-labelledby="places-title">
+      <h2 id="places-title">Top Places</h2>
+      <p class="section-lead">Natural and historical objects, rated by local experts.</p>
+
+      <ul class="cards">
+        <li>
+          <article class="card">
+            <figure class="card__media">
+              <img src="images/charyn.svg" alt="Red sandstone cliffs of a canyon" loading="lazy">
+              <figcaption class="chip">4x4</figcaption>
+            </figure>
+            <h3>Charyn Canyon</h3>
+            <p>Red sandstone canyon, Valley of Castles</p>
+            <footer class="card__meta">
+              <p class="rating" aria-label="Expert rating 4.9 out of 5"><span class="star" aria-hidden="true"></span><strong>4.9</strong> <span>Expert rating</span></p>
+              <p class="kind">Nature</p>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="card__media">
+              <img src="images/kolsay.svg" alt="Alpine lake below snowy peaks" loading="lazy">
+              <figcaption class="chip">Hiking</figcaption>
+            </figure>
+            <h3>Kolsay Lakes</h3>
+            <p>Three alpine lakes deep in the Tian Shan</p>
+            <footer class="card__meta">
+              <p class="rating" aria-label="Expert rating 4.8 out of 5"><span class="star" aria-hidden="true"></span><strong>4.8</strong> <span>Expert rating</span></p>
+              <p class="kind">Nature</p>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="card__media">
+              <img src="images/bigalmaty.svg" alt="Turquoise mountain lake" loading="lazy">
+              <figcaption class="chip">4x4</figcaption>
+            </figure>
+            <h3>Big Almaty Lake</h3>
+            <p>Turquoise lake high above the city</p>
+            <footer class="card__meta">
+              <p class="rating" aria-label="Expert rating 4.7 out of 5"><span class="star" aria-hidden="true"></span><strong>4.7</strong> <span>Expert rating</span></p>
+              <p class="kind">Nature</p>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="card__media">
+              <img src="images/tamgaly.svg" alt="Rocks with ancient carved figures" loading="lazy">
+              <figcaption class="chip">Hiking</figcaption>
+            </figure>
+            <h3>Tamgaly Petroglyphs</h3>
+            <p>Bronze Age petroglyphs, UNESCO site</p>
+            <footer class="card__meta">
+              <p class="rating" aria-label="Expert rating 4.6 out of 5"><span class="star" aria-hidden="true"></span><strong>4.6</strong> <span>Expert rating</span></p>
+              <p class="kind">History</p>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="card__media">
+              <img src="images/issyk.svg" alt="Ancient burial mound on a green steppe" loading="lazy">
+              <figcaption class="chip">Hiking</figcaption>
+            </figure>
+            <h3>Issyk Kurgan</h3>
+            <p>Saka royal burial mound, Golden Man</p>
+            <footer class="card__meta">
+              <p class="rating" aria-label="Expert rating 4.5 out of 5"><span class="star" aria-hidden="true"></span><strong>4.5</strong> <span>Expert rating</span></p>
+              <p class="kind">History</p>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="card__media">
+              <img src="images/dune.svg" alt="Golden sand dune at sunset" loading="lazy">
+              <figcaption class="chip">4x4</figcaption>
+            </figure>
+            <h3>Singing Dune</h3>
+            <p>A dune that hums in dry, windy weather</p>
+            <footer class="card__meta">
+              <p class="rating" aria-label="Expert rating 4.8 out of 5"><span class="star" aria-hidden="true"></span><strong>4.8</strong> <span>Expert rating</span></p>
+              <p class="kind">Nature</p>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="planner" id="route-planner" aria-labelledby="planner-title">
+      <header class="planner__intro">
+        <h2 id="planner-title">Plan Your Route</h2>
+        <p class="section-lead">Tell us how long you travel and with whom, and we will email you a route map in PDF format together with an expedition checklist.</p>
+        <ul class="checks">
+          <li>Route map in PDF</li>
+          <li>Expedition checklist</li>
+          <li>Safety and rescue contacts</li>
+        </ul>
+      </header>
+
+      <form class="route-form" action="#" method="post">
+        <label class="field">
+          <span>Duration (in days)</span>
+          <input type="number" name="days" min="1" max="30" inputmode="numeric" placeholder="e.g. 3" required>
+          <small class="field__hint">Enter a number from 1 to 30.</small>
+        </label>
+
+        <label class="field">
+          <span>Group Size</span>
+          <input type="number" name="group" min="1" max="50" inputmode="numeric" placeholder="e.g. 4 people" required>
+          <small class="field__hint">Enter a number from 1 to 50.</small>
+        </label>
+
+        <label class="field">
+          <span>Email for Sending the Map in PDF Format</span>
+          <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          <small class="field__hint">Enter a valid email, e.g. name@example.com.</small>
+        </label>
+
+        <label class="field field--optional">
+          <span>Phone</span>
+          <input type="tel" name="phone" autocomplete="tel" placeholder="+7 700 000 00 00" pattern="\+?[0-9\s\-()]{7,20}">
+          <small class="field__hint">Use digits, spaces, + and dashes only.</small>
+        </label>
+
+        <button class="btn btn--primary" type="submit">Generate Map &amp; Checklist</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <section class="site-footer__brand" aria-labelledby="f-brand">
+      <h2 id="f-brand">Guideregion</h2>
+      <p>Independent tourist guide. Always check weather and local rules before any trip.</p>
+    </section>
+
+    <nav aria-labelledby="f-nav">
+      <h2 id="f-nav">Navigate</h2>
+      <ul>
+        <li><a href="#top-places">Top Places</a></li>
+        <li><a href="#route-planner">Routes</a></li>
+        <li><a href="#site-footer">Tips for Tourists</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="f-sos">
+      <h2 id="f-sos">Emergency</h2>
+      <ul>
+        <li><a href="tel:112">112</a> · Rescue (unified)</li>
+        <li><a href="tel:103">103</a> · Ambulance</li>
+        <li><a href="tel:101">101</a> · Fire service</li>
+      </ul>
+    </section>
+
+    <nav aria-labelledby="f-guides">
+      <h2 id="f-guides">Guides</h2>
+      <ul>
+        <li><a href="#site-footer">Certified guides</a></li>
+        <li><a href="#site-footer">Guide association</a></li>
+      </ul>
+    </nav>
+
+    <section class="legal" aria-label="Legal information">
+      <small>© 2026 Guideregion. All rights reserved.</small>
+      <a href="#site-footer">Privacy Policy</a>
+      <a href="#site-footer">Terms of Use</a>
+      <label class="theme-switch">
+        <span>Theme</span>
+        <input type="checkbox" id="theme-toggle" role="switch" aria-label="Invert the system color theme">
+      </label>
+    </section>
+  </footer>
+
+</body>
+</html>
